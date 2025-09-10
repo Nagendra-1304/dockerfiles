@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version:-9}
 ARG course="DevOps with AWS" \
     duration="120Hrs"
 RUN echo "Course: $course, duration: $duration"
